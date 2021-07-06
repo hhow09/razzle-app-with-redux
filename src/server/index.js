@@ -35,11 +35,9 @@ export const renderApp = (req, res) => {
 
       // Compile an initial state
       const preloadedState = { counter };
-      console.log("preloadedState",preloadedState)
+        
       // Create a new Redux store instance
       const store = configureStore(preloadedState);
-  
-     console.log("store", store)
 
       // Render the component to a string
       const markup = renderToString(
